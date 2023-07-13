@@ -147,7 +147,8 @@ public class RNWhatsAppStickersModule extends ReactContextBaseJavaModule {
     }
 
     private static String getLastBitFromUrl(final String url) {
-        return url.replaceFirst(".*/([^/?]+).*", "$1");
+        String[] parts = url.split("\\?")[0].split("[/%]2F");
+        return parts[parts.length - 1];
     }
 
     public static void SaveTryImage(Bitmap finalBitmap, String name, String identifier) {
