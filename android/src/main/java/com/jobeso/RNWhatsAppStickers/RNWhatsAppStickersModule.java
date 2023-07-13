@@ -91,7 +91,7 @@ public class RNWhatsAppStickersModule extends ReactContextBaseJavaModule {
             }
             Hawk.put(stickerPack.getString("identifier"), mStickers);
 
-            stickerPacks.get(stickerPacks.size() - 1).setAndroidPlayStoreLink("https://play.google.com/store/apps/details?id=com.dawwati");
+            stickerPacks.get(stickerPacks.size() - 1).setAndroidPlayStoreLink("https://play.google.com/store/apps/details?id=com.drsimple.brawlspeak");
             stickerPacks.get(stickerPacks.size() - 1).setStickers(Hawk.get(stickerPack.getString("identifier"), new ArrayList<Sticker>()));
             Hawk.put("sticker_packs", stickerPacks);
             Hawk.put("dawwati_ping", "PONG");
